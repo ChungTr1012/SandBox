@@ -83,7 +83,6 @@ nav ul li a {
 }
 
 .image .circle {
-    position: absolute;
     background-color: #fff;
     width: 50px;
     height: 50px;
@@ -128,7 +127,7 @@ nav ul li a {
 }
 /* Features */
 .features {
-    padding: 300px 20px;
+    padding: 200px 20px;
     text-align: center;
 }
 .fea{
@@ -192,7 +191,6 @@ nav ul li a {
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
 }
 
 .left-column, .right-column {
@@ -292,7 +290,8 @@ li img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px;
+    justify-content: space-between;
+    position: relative;
 }
 
 .text-content {
@@ -301,51 +300,183 @@ li img {
     padding: 20px;
 }
 .text-content h3{
-    text-transform: uppercase;
-    font-size: 16px;
     color: rgba(248, 87, 166, 1);
+    font-size: 16px;
 }
 
-.text-content ul {
-    list-style: none;
-    padding: 0;
+.cards-container {
     display: flex;
-    flex-direction: column; 
-}
-
-.text-content li {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.text-content li img {
-    margin-right: 10px;
-    width: 20px; 
-    height: 20px; 
+    flex-direction: column;
+    margin-right: 20px; 
 }
 
 .image-content {
-    flex: 1;
     min-width: 300px;
     padding: 20px;
     display: flex;
-    flex-direction: column; 
+    align-items: flex-start;
+    position: relative;
+    justify-content: center
 }
 
 .image-content img {
     width: 100%;
     height: auto;
     max-width: 400px;
+    align-items: center; 
+}
+
+.card_1, .card_2 {
+    position: relative;
+    right: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
     margin-bottom: 20px; 
 }
+
+.card_1 img, .card_2 img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card_1 h3, .card_2 h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.card_1 p, .card_2 h3 {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+
 
 @media (max-width: 768px) {
     .content-section {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .image-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-container {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .image-content img {
-        margin-bottom: 10px; 
+        margin-left: 0;
+    }
+
+    .card_1 img, .card_2 img {
+        width: 50px;
+    }
+
+    .card_1 h3, .card_2 h1 {
+        font-size: 24px;
+    }
+
+    .card_1 p, .card_2 h3 {
+        font-size: 16px;
+    }
+}
+
+/*Proud of solution */
+.stats-section {
+    background: rgba(199,202,252,255);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+    margin: 0 auto; 
+}
+
+.stats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 4px dashed #ddd; /* Viền gạch gạch dày hơn */
+    box-sizing: border-box; 
+}
+
+.stats-header {
+    max-width: 30%;
+}
+
+.stats-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stats-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+.stats-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    text-align: center;
+}
+
+.stats-card {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-card img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.stats-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.stats-card p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stats-header {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .stats-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .stats-card {
+        margin-bottom: 15px;
     }
 }
