@@ -11,33 +11,70 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1320px; 
+    height: 77px; 
+    margin: 0 auto; 
     padding: 20px 50px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.logo p{
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    margin-right: -10px;
+}
+
+.logo p {
     font-size: 22px;
     line-height: 30px;
     font-weight: 600;
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, 1);
+}
+
+nav {
+    margin-right: 0; 
+    margin-top: -20px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 20px; 
 }
-
-nav ul li a {
-    text-decoration: none;
+nav ul li a{
     color: #333;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
 }
 
-.signup {
-    color: #ff4081;
+nav ul li:last-child {
+    margin-right: auto; /* Giữ khoảng cách tự động giữa Documentation và Sign-up */
 }
+
+.sign-up {
+    margin-top: -20px;
+    margin-left: 50px; 
+    margin-right: 50px;
+}
+
+.sign-up a {
+    font-size: 17px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
 
 /*Header */
 .hero {
