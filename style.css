@@ -11,8 +11,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1320px; 
-    height: 77px; 
+    width: 1220px; 
+    height: 37px; 
     margin: 0 auto; 
     padding: 20px 50px;
 }
@@ -30,24 +30,22 @@ header {
     font-size: 22px;
     line-height: 30px;
     font-weight: 600;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: rgba(0, 0, 0, 1);
 }
 
 nav {
     margin-right: 0; 
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul li {
-    margin-left: 20px; 
+    margin-left: 10px; 
 }
 nav ul li a{
     color: #333;
@@ -57,11 +55,11 @@ nav ul li a{
 }
 
 nav ul li:last-child {
-    margin-right: auto; /* Giữ khoảng cách tự động giữa Documentation và Sign-up */
+    margin-right: auto;
 }
 
 .sign-up {
-    margin-top: -20px;
+    margin-top: -10px;
     margin-left: 50px; 
     margin-right: 50px;
 }
@@ -75,34 +73,36 @@ nav ul li:last-child {
 
 
 
-
-/*Header */
+/*Content */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    margin: 0 auto;
+    background: #e0f2fe;
+    width: 1370px; 
+    height: 543px;
+    position: relative; 
+    overflow: visible;
 }
 
 .content {
-    max-width: 500px;
+    max-width: 50%; 
+    margin-right: 20px; 
 }
-
-.content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.content h1{
+    font-size: 46px;
+    font-weight: 600;
 }
-
+.content p{
+    font-size: 23px;
+    font-weight: 500;
+}
 .content .highlight {
-    color: #ff4081;
+    color: rgba(239, 63, 110, 1);
 }
-
-.content p {
-    margin-bottom: 20px;
-}
-
-.button {
+.content .button {
     display: inline-block;
     padding: 10px 20px;
     background: #ff4081;
@@ -110,62 +110,23 @@ nav ul li:last-child {
     text-decoration: none;
     border-radius: 5px;
 }
-
-.image img {
-    max-width: 100%;
-}
-
 .image {
-    position: relative;
+    max-width: 50%; 
+    text-align: left; 
+    position: absolute;
+    right: 70px;
+    top: 63%; 
+    transform: translateY(-50%); 
 }
 
-.image .circle {
-    background-color: #fff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #e9ecef;
-}
-
-.image .circle img {
-    width: 30px;
-    height: 30px;
-}
-
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .content {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav ul li {
-        margin: 10px 0;
-    }
-}
 /* Features */
 .features {
     padding: 200px 20px;
     text-align: center;
+    width: 1243px;
+    height: 61px;
+    margin: 0 auto;
+    margin-top: 75px;
 }
 .fea{
     font-size: 38px;
@@ -177,6 +138,7 @@ nav ul li:last-child {
     color: #ff527b;
     margin-bottom: 10px;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .features h3 {
@@ -213,16 +175,7 @@ nav ul li:last-child {
     font-size: 17px;
 }
 
-@media (max-width: 768px) {
-    .features-grid {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .feature-item {
-        max-width: 100%;
-    }
-}
 
 /* Solution */
 .container {
