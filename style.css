@@ -160,11 +160,13 @@ nav ul li:last-child {
     text-align: left;
     max-width: calc(33.333% - 40px);
     box-sizing: border-box;
+
 }
 
 .feature-item img {
     width: 40px;
     margin-bottom: 10px;
+    transform: translateX(-65px) translateY(89px); 
 }
 
 .feature-item h3 {
@@ -173,6 +175,7 @@ nav ul li:last-child {
 
 .feature-item p {
     font-size: 17px;
+    margin-bottom: -20px;
 }
 
 
