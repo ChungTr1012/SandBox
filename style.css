@@ -121,7 +121,7 @@ nav ul li:last-child {
 
 /* Features */
 .features {
-    padding: 200px 20px;
+    padding: 200px 150px;
     text-align: center;
     width: 1243px;
     height: 61px;
@@ -184,6 +184,10 @@ nav ul li:last-child {
 .container {
     display: flex;
     flex-wrap: wrap;
+    margin: 650px auto;
+    width: 1190px;
+    height: 611px;
+    gap: 120px;
 }
 
 .left-column, .right-column {
@@ -214,15 +218,16 @@ nav ul li:last-child {
 
 .right-column h1 {
     color: #333;
-    font-size: 24px;
+    font-size: 38px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 p {
     color: #666;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 17px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 ul {
@@ -237,7 +242,8 @@ li {
     display: flex;
     align-items: center;
     color: #333;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 li img {
@@ -246,45 +252,18 @@ li img {
     height: 20px;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .left-column, .right-column {
-        min-width: 100%;
-    }
-
-    .right-column {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    p, li {
-        font-size: 14px;
-    }
-
-    li img {
-        width: 16px;
-        height: 16px;
-    }
-
-    ul {
-        grid-template-columns: 1fr;
-    }
-}
 
 /*difference */
 .content-section {
     display: flex;
     flex-wrap: wrap;
+    margin: -500px auto;
     align-items: center;
     justify-content: space-between;
     position: relative;
+    width: 1330px;
+    height: 590px;
 }
 
 .text-content {
@@ -295,6 +274,28 @@ li img {
 .text-content h3{
     color: rgba(248, 87, 166, 1);
     font-size: 16px;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+.text-content h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+.text-content p {
+    font-size: 15px;
+    font-weight: 500;
+}
+.text-content ul {
+    display: flex;
+    flex-direction: column; 
+    padding: 0;
+    margin: 0;
+}
+
+.text-content ul li {
+    margin-bottom: 10px; 
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .cards-container {
@@ -304,82 +305,91 @@ li img {
 }
 
 .image-content {
-    min-width: 300px;
+    min-width: 665px; 
     padding: 20px;
-    display: flex;
-    align-items: flex-start;
+    align-items: flex-start; 
+    justify-content: flex-end;  
     position: relative;
-    justify-content: center
 }
 
 .image-content img {
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    align-items: center; 
+    width: 665px; 
+    height: 590px; 
+    object-fit: cover; 
 }
 
-.card_1, .card_2 {
-    position: relative;
-    right: 500px;
+.card_1 {
+    position: absolute; 
+    top: 120px; 
+    left: -50px; 
+    width: 167px; 
+    height: 59px; 
     border-radius: 10px;
     padding: 20px;
     background: rgba(255, 255, 255, 1);
     text-align: center;
-    margin-bottom: 20px; 
+}
+.card_1 img{
+    transform: translateX(5px); 
+}
+.card_1 h3  {
+    transform: translateY(-10px); 
+}
+.card_1 p {
+    transform: translateX(5px) translateY(-18px) ; 
 }
 
-.card_1 img, .card_2 img {
+.card_2 {
+    position: absolute; 
+    top: calc(235px + 99px + 50px); 
+    left: -73px; 
+    width: 190px; 
+    height: 149px; 
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    margin-bottom: 67px; 
+}
+
+.card_1 img{
     width: 60px;
     height: auto;
     margin-bottom: 10px;
 }
+.card_2 img{
+    width: 170px; /* Chiều rộng của hình ảnh trong card_2 */
+    height: 85px; /* Chiều cao của hình ảnh trong card_2 */
+    object-fit: cover; 
+}
+.card_2 h1{
+    transform: translateY(-80px)
+}
+.card_2 h3{
+    transform: translateY(-110px)
+}
 
-.card_1 h3, .card_2 h1 {
+.card_1 h3{
     font-size: 24px;
     color: #333;
     margin: 10px 0 5px;
 }
 
-.card_1 p, .card_2 h3 {
+.card_1 p {
     font-size: 16px;
     color: #777;
     margin: 0;
 }
-
-
-@media (max-width: 768px) {
-    .content-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cards-container {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .image-content img {
-        margin-left: 0;
-    }
-
-    .card_1 img, .card_2 img {
-        width: 50px;
-    }
-
-    .card_1 h3, .card_2 h1 {
-        font-size: 24px;
-    }
-
-    .card_1 p, .card_2 h3 {
-        font-size: 16px;
-    }
+.card_2 h1{
+    font-size: 40px;
 }
+.card_2 h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
 
 /*Proud of solution */
 .stats-section {
