@@ -500,6 +500,7 @@ li img {
 .container-studies{
     text-align: center;
     margin: 0 auto;
+    width: 1290px;
     margin-top: 200px;
 }
 .container-studies h3{
@@ -520,11 +521,7 @@ li img {
     height: 360px;
     margin-top: 50px;
 }
-.container-studies .list_img img {
-    max-width: 410px;
-    max-height: 256px;
-    object-fit: contain; 
-}
+
 .container-studies .list_img h3{
     font-size: 23px;
     font-weight: 600;
@@ -537,9 +534,93 @@ li img {
     color: rgba(170, 176, 188, 1);
     margin-right: 280px;
 }
+.container-studies .list_img .item{
+    display: flex;
+    max-width: 6px;
+    max-height: 6px;
+    object-fit: contain; 
+    margin-top: -35px;
+    margin-left: 115px;
+}
 .container-studies .list_img .extra-text {
-    margin-top: 50px; /* Khoảng cách giữa chú thích và chữ bổ sung */
-    font-size: 14px; /* Kích thước chữ cho chữ bổ sung */
-    color: #666; /* Màu chữ cho chữ bổ sung */
-    text-align: left; /* Căn trái chữ bổ sung */
+    margin-top: -13px; 
+    font-size: 14px;
+    color: rgba(170, 176, 188, 1); 
+}
+.container-studies .item_circle{
+    margin-top: 60px;
+}
+.container-studies .item_circle .circle{
+    max-width: 10px;
+    max-height: 10px;
+    object-fit: contain; 
+}
+
+/* Introduce */
+.container_introduce{
+    display: flex;
+    margin: 200px auto;
+    width: 1290px;
+    height: 545px;
+    gap: 50px;
+}
+.introduce_img{
+    display: flex;
+    gap: 20px;
+}
+ .img_l1 {
+    width: 293px;
+    height: 260px;
+}
+
+ .img_l2 {
+    width: 293px;
+    height: 235px;
+    margin-top: 26px;
+}
+.img_l3{
+    width: 560px;
+    height: 285px;
+    margin-top: 283px;
+    margin-left:-630px;
+}
+.introduce_text{
+    margin-top: 50px;
+}
+.introduce_text h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff527b;
+    text-transform: uppercase;
+}
+.introduce_text h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+.introduce_text p, ul{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(96, 105, 123, 1);
+}
+
+/* Mission */
+.container_mission{
+    display: flex;
+    margin: 0 auto;
+    gap: 70px; 
+    width: 1290px;
+    height: 108px;
+}
+.container_mission h3{
+    margin-top: -53px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container_mission p{
+    margin-top: -10px;
+    margin-left: 60px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(96, 105, 123, 1);
 }
