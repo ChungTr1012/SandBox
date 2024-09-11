@@ -188,7 +188,7 @@ nav ul li:last-child {
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin: 200px auto;
+    margin: 100px auto;
     width: 1190px;
     height: 611px;
     gap: 120px;
@@ -262,7 +262,7 @@ li img {
 .content-section {
     display: flex;
     flex-wrap: wrap;
-    margin: -500px auto;
+    margin: 200px auto;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -400,11 +400,11 @@ li img {
     background:#98d2e6;
     padding: 30px;
     border-radius: 10px;
-    width: 1410px; /* Chiều rộng mới */
-    height: 398px; /* Chiều cao mới */
+    width: 1410px; 
+    height: 398px; 
     display: flex;
     justify-content: space-between;
-    margin: 520px auto 0 auto; /* Căn giữa và tạo khoảng cách 20px phía trên */
+    margin: -180px auto 0 auto; 
 
 }
 
