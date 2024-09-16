@@ -188,21 +188,17 @@ nav ul li:last-child {
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin: 100px auto;
-    width: 1190px;
-    height: 611px;
-    gap: 120px;
+    margin: 50px auto; 
+    width: 100%;
+    max-width: 1190px; 
+    height: auto;
+    gap: 40px;
 }
 
 .left-column, .right-column {
     flex: 1;
-    min-width: 300px;
-}
-
-.left-column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-width: 100%; 
+    margin-bottom: 20px; 
 }
 
 .left-column img {
@@ -210,10 +206,6 @@ nav ul li:last-child {
     height: auto;
 }
 
-.right-column {
-    padding: 20px;
-    max-width: 600px;
-}
 .right-column h3{
     text-transform: uppercase;
     font-size: 16px;
@@ -826,10 +818,14 @@ footer {
         padding: 15px 30px;
         flex-wrap: wrap;
     }
-
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .logo p {
         font-size: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     nav ul li a {
@@ -926,10 +922,10 @@ footer {
     }
 
     .image {
-        max-width: 80%;
+        width: 100%;
         margin: 0 auto;
         position: relative;
-        right: 0;
+        right: 100px;
         top: 0;
         transform: none;
     }
@@ -958,7 +954,16 @@ footer {
         transform: none;
         margin-bottom: 10px;
         margin-left: auto;
-         margin-right: auto; /* Canh giữa hình ảnh */    
+         margin-right: auto;   
+    }
+    .right-column h1 {
+        font-size: 34px;
+    }
+    .right-column p{
+        font-size: 16px;
+    }
+    .right-column li{
+        font-size: 16px;
     }
 }
 
@@ -978,6 +983,74 @@ footer {
     .feature-item img {
         width: 50px;
         margin-left: auto;
-         margin-right: auto; /* Canh giữa hình ảnh */
+        margin-right: auto; 
+    }
 }
+@media (min-width: 768px) {
+    .container {
+        flex-wrap: nowrap; 
+        gap: 120px;
+    }
+
+    .left-column, .right-column {
+        min-width: 300px; 
+    }
+
+    ul {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 1190px; 
+    }
+    
+}
+@media (max-width: 1024px) {
+    .content-section {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 100px auto;
+    }
+
+    .image-content, .text-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card_1, .card_2 {
+        position: static;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .card_2 img, .card_1 img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-content h1 {
+        font-size: 28px;
+    }
+
+    .text-content p, .text-content ul li {
+        font-size: 14px;
+    }
+
+    .card_2 h1 {
+        font-size: 30px;
+    }
+
+    .card_2 h3, .card_1 h3 {
+        font-size: 18px;
+    }
 }
