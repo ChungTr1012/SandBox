@@ -1014,43 +1014,82 @@ footer {
         height: auto;
         margin: 100px auto;
     }
-
+    .card_1{
+        margin-top: -50px;
+        margin-left: 60px;
+        width: 150px;
+        height: 35px;
+    }
+    .card_1 img{
+        width: 25%;
+    }
+    
     .image-content, .text-content {
         width: 100%;
-        padding: 10px;
     }
 
     .image-content img {
-        width: 100%;
+        width: 95%;
         height: auto;
     }
 
-    .card_1, .card_2 {
-        position: static;
-        margin: 20px 0;
-        width: 100%;
-    }
 
-    .card_2 img, .card_1 img {
-        width: 50px;
-        height: auto;
+    .card_2 {
+        margin-bottom: 40px;
     }
 }
 
 @media (max-width: 768px) {
+    .text-content{
+        margin-left: -230px;
+    }
     .text-content h1 {
-        font-size: 28px;
+        font-size: 33px;
     }
 
     .text-content p, .text-content ul li {
         font-size: 14px;
     }
+    .image-content img{
+        margin-left: 5px;
+        width: 65%;
+    }
+    .card_1{
+        position: absolute;
+        margin-top: -50px;
+        margin-left: 60px;
+        width: 130px;
+        height: 35px;
+    }
+    .card_2{
+        position: absolute;
+        margin-top: -50px;
+        margin-left: 80px;
+        width: 130px;
+        height: 100px;
+    }
+    .card_1 img{
+        width: 25%;     
+    }
+    .card_2 img{
+        width: 75%;
+    }
+
+    .card_1 h3 {
+        font-size: 20px;
+        transform:  translateY(-20px);
+    }
+    .card_1 p{
+        transform: translateX(30px) translateY(-30px);
+    }
 
     .card_2 h1 {
         font-size: 30px;
+        margin-top: 50px;
     }
 
-    .card_2 h3, .card_1 h3 {
+    .card_2 h3 {
         font-size: 18px;
     }
 }
+
