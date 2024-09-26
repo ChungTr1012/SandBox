@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>SandBox</title>
 </head>
 <body>
@@ -15,21 +18,24 @@
             <img src="img/Clip path group.png" alt="Logo">
             <p>Logo</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Demos</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Blocks</a></li>
-                <li><a href="#">Documentation</a></li>
+        <label for="openNav" class="openNav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="navbar">
+            <ul class="menu">
+                <li>Demos</li>
+                <li>Pages</li>
+                <li>Projects</li>
+                <li>Blog</li>
+                <li>Blocks</li>
+                <li>Documentation</li>
             </ul>
-        </nav>
-        <div class="sign-up">
-            <a href="#">Sign-up</a>
-        </div>
-        <div class="sign-up">
-            <a href="#">Sign-up</a>
+            <ul class="otherOption">
+                <li>Sign in</li>
+                <li>Sign in</li>
+            </ul>
         </div>
     </header>
     <main>
@@ -184,39 +190,26 @@
         <section class="container-studies">
             <h3>CASE STUDIES</h3>
             <h2>Check out some of our awesome projects <br>with creative ideas and great design.</h2>
-            <div class="list_img">
-                <div class="img-wrapper">
+            <div class="home-demo">
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
                     <img src="img/Ligula_img.png" alt="">
                     <h3>Ligula tristique quis risus</h3>
-                    <p class="caption">14 Apr 2022</p>
-                    <img class="item" src="img/List_Item.png" alt="">
-                    <p class="extra-text">Coding</p>
-                </div>
-                <div class="img-wrapper">
+                    <p>14 Apr 2022</p>
+                    <p class="code">Coding</p>
+                  </div>
+                  <div class="item">
                     <img src="img/Nullam_img.png" alt="">
                     <h3>Nullam id dolor elit id nibh</h3>
-                    <p class="caption">29 Mar 2022</p>
-                    <img class="item" src="img/List_Item.png" alt="">
-                    <p class="extra-text">Workspace</p>
-                </div>
-                <div class="img-wrapper">
+                    <p>29 Mar 2022</p>
+                    <p class="code">Workspace</p>
+                  </div>
+                  <div class="item">
                     <img src="img/Ultricies_img.png" alt="">
-                   <h3>Ultricies fusce porta elit</h3>
-                   <p class="caption">26 Feb 2022</p>
-                   <img class="item" src="img/List_Item.png" alt="">    
-                   <p class="extra-text">Meeting</p>
-                </div>
-            </div>
-            <div class="item_circle">
-                <input type="radio" id="circle1" name="circle" />
-                <label for="circle1" class="circle"></label>
-            
-                <input type="radio" id="circle2" name="circle" />
-                <label for="circle2" class="circle"></label>
-            
-                <input type="radio" id="circle3" name="circle" />
-                <label for="circle3" class="circle"></label>
-            </div>
+                    <h3>Ultricies fusce porta elit</h3>
+                    <p>26 Feb 2022</p>
+                    <p class="code">Meeting</p>
+                  </div>
         </section>
     </div>
     <div>
@@ -333,5 +326,18 @@
             </div>
           </footer>  
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+  // Owl Carousel
+  var owl = $(".owl-carousel ");
+  owl.owlCarousel({
+    items: 3,
+    margin: 10,
+    loop: true,
+  });
+});
+    </script>
 </body>
 </html>
