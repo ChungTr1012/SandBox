@@ -60,7 +60,9 @@ header {
     display: inline-block;
     position: relative;
 }
-
+input[name="openNav"]{
+    display: none;
+}
 
 
 /*Content */
@@ -785,6 +787,7 @@ footer {
     }
 
     .hero {
+        position: static;
         max-width: 100%;
         height: auto;
         padding: 40px 0px;
@@ -804,10 +807,11 @@ footer {
     }
 
     .image {
-       position: absolute;
+       position: sticky;
         margin-top: 300px;
     }
     .image img{
+       display: block;
         max-width: 100%; 
         
     }
@@ -1271,6 +1275,7 @@ footer {
   }
   @media (max-width: 1024px) {
     .container-studies {
+        position: static;
         width: 100%;
         padding: 0 20px;
         margin-top: 100px;
@@ -1365,7 +1370,7 @@ footer {
     }
     .navbar{
         position: fixed;
-        width: 60vw;
+        width: 50vw;
         background-color: #3D5060;
         top: 0;
         left: 0;
@@ -1402,4 +1407,22 @@ footer {
     input[name="openNav"]{
         display: none;
     }
+    .navbar li{
+        display: block;
+        position: unset;
+        border-bottom:2px solid #384857 ;
+        font-weight: 500;
+    }
+    .navbar .otherOption,
+    .navbar .menu{
+        width: 100%;
+        text-align: left;
+    }
+    .navbar .menu li:hover{
+        background-color: unset!important;
+        border-left: 10px solid #5BB299;
+    }
+    
+    
+    
 }
